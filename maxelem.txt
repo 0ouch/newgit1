@@ -13,20 +13,15 @@ int main()
         cin >> vec[i];
 
 
-    int min = INT_MAX, max = INT_MIN;
+    int min = INT_MAX;
     for (int i : vec)
     {
         if (i < min) {
             min = i;
         }
-
-        if (i > max) {
-            max = i;
-        }
     }
 
     std::cout << "The min element is " << min << std::endl;
-    std::cout << "The max element is " << max << std::endl;
 
     return 0;
 }
